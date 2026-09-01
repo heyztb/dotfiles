@@ -1,0 +1,19 @@
+theme = "vitesse-light"
+mode = "split"
+vcs = "jj"          # git, jj, sl
+watch = false
+exclude_untracked = false
+line_numbers = true
+tab_width = 4       # tab stops, 1-16
+wrap_lines = false
+menu_bar = false
+agent_notes = false
+prompt_save_view_preferences = false
+transparent_background = false
+hunk_headers = false
+copy_decorations = false
+cursor_line = "off"
+
+[keybindings]
+"hunk.app.toggleHelp" = false
+"hunk.review.startNote" = false

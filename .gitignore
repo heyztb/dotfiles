@@ -1,0 +1,7 @@
+.DS_Store
+.jj/
+nvim.log
+packages/nvim/.config/nvim/nvim.log
+packages/hunk/.config/hunk/state.json
+**/.zsh_history
+**/history.txt
