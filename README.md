@@ -1,81 +1,39 @@
 # dotfiles
 
-Personal macOS configuration for Neovim, Tmux, Hunk, Ghostty, Nushell, and Zsh, managed as GNU Stow packages.
+Personal macOS configuration managed with GNU Stow.
 
-## Install
+## Setup
 
-Install GNU Stow if needed:
-
-```sh
+```shell
 brew install stow
-```
-
-Install every package:
-
-```sh
 ./scripts/install.sh
 ```
 
-Or install only selected packages:
+Pass package names to install only part of the configuration:
 
-```sh
+```shell
 ./scripts/install.sh nvim ghostty nushell
 ```
 
-The installer uses per-file links (`--no-folding`) so applications can keep runtime files next to managed configuration. Existing conflicting files are moved, never overwritten, beneath:
+Existing files are backed up before linking to:
 
 ```text
 ~/.local/state/dotfiles/backups/<timestamp>/
 ```
 
-If `XDG_STATE_HOME` is set, backups use that directory instead of `~/.local/state`.
+Install the Tmux Plugin Manager separately:
 
-## Packages
-
-| Package | Installed location |
-| --- | --- |
-| `nvim` | `~/.config/nvim` |
-| `tmux` | `~/.config/tmux` |
-| `hunk` | `~/.config/hunk/config.toml` |
-| `ghostty` | `~/.config/ghostty` |
-| `nushell` | `~/Library/Application Support/nushell` |
-| `zsh` | `~/.zshenv`, `~/.zprofile`, and `~/.zshrc` |
-
-Install the Tmux Plugin Manager separately. The helper is safe to run more than once:
-
-```sh
+```shell
 ./scripts/install-tpm.sh
 ```
 
-Then start Tmux and press `prefix` + <kbd>I</kbd> to install configured plugins.
+## Remove links
 
-## Uninstall links
-
-Remove links for selected packages without deleting repository files:
-
-```sh
+```shell
 stow --dir="$PWD/packages" --target="$HOME" --no-folding --delete nvim tmux
 ```
 
-Use the absolute repository path instead of `$PWD` when running the command outside this checkout.
+## Local settings
 
-## Restoring a backup
-
-1. Remove the relevant Stow package with `stow --delete` as shown above.
-2. Locate the timestamped backup beneath `~/.local/state/dotfiles/backups` (or `$XDG_STATE_HOME/dotfiles/backups`).
-3. Move the backed-up file to its original home-relative path.
-
-Backups are intentionally retained until they are manually reviewed and removed.
-
-## Intentionally unmanaged files
-
-Generated data and machine state stay outside this repository:
-
-- Git and Jujutsu metadata from the former per-application repositories
-- Neovim logs, caches, downloaded plugins, and editor state
-- Hunk `state.json`
-- Nushell history and generated Atuin/Zoxide integration
-- Zsh history and session data
-- Tmux plugin checkouts under `~/.tmux/plugins`
-
-Before publishing this repository, review machine- and work-specific values (including `GOPRIVATE`), run a secret scan, and refresh GitHub CLI authentication. The former application repositories should remain untouched until the consolidated repository has been published and verified.
+Put machine- or work-specific Zsh settings in `~/.zprofile.local`. The tracked
+profile sources it when present, while it remains outside this repository.
