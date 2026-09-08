@@ -1,0 +1,91 @@
+theme = "melange"
+
+[editor]
+line-number = "relative"
+scrolloff = 8
+text-width = 100
+rulers = [100]
+
+[editor.soft-wrap]
+enable = false
+wrap-at-text-width = true
+
+[keys.normal]
+C-d = ["page_cursor_half_down", "align_view_center"]
+C-u = ["page_cursor_half_up", "align_view_center"]
+n = ["search_next", "align_view_center"]
+N = ["search_prev", "align_view_center"]
+
+# AeroSpace owns Alt: press backslash, then the original Alt binding key.
+[keys.normal."\\"]
+"." = "repeat_last_motion"
+"`" = "switch_to_uppercase"
+"d" = "delete_selection_noyank"
+"c" = "change_selection_noyank"
+"C" = "copy_selection_on_prev_line"
+"s" = "split_selection_on_newline"
+"minus" = "merge_selections"
+"_" = "merge_consecutive_selections"
+";" = "flip_selections"
+":" = "ensure_selections_forward"
+"," = "remove_primary_selection"
+"o" = "expand_selection"
+"up" = "expand_selection"
+"i" = "shrink_selection"
+"down" = "shrink_selection"
+"I" = "select_all_children"
+"S-down" = "select_all_children"
+"p" = "select_prev_sibling"
+"left" = "select_prev_sibling"
+"n" = "select_next_sibling"
+"right" = "select_next_sibling"
+"e" = "move_parent_node_end"
+"b" = "move_parent_node_start"
+"a" = "select_all_siblings"
+"x" = "shrink_to_line_bounds"
+"*" = "search_selection"
+"u" = "earlier"
+"U" = "later"
+"J" = "join_selections_space"
+"K" = "remove_selections"
+"(" = "rotate_selection_contents_backward"
+")" = "rotate_selection_contents_forward"
+"|" = "shell_pipe_to"
+"!" = "shell_append_output"
+
+# AeroSpace owns Alt: press backslash, then the original Alt binding key.
+[keys.select."\\"]
+"." = "repeat_last_motion"
+"`" = "switch_to_uppercase"
+"d" = "delete_selection_noyank"
+"c" = "change_selection_noyank"
+"C" = "copy_selection_on_prev_line"
+"s" = "split_selection_on_newline"
+"minus" = "merge_selections"
+"_" = "merge_consecutive_selections"
+";" = "flip_selections"
+":" = "ensure_selections_forward"
+"," = "remove_primary_selection"
+"o" = "expand_selection"
+"up" = "expand_selection"
+"i" = "shrink_selection"
+"down" = "shrink_selection"
+"I" = "select_all_children"
+"S-down" = "select_all_children"
+"p" = "select_prev_sibling"
+"left" = "select_prev_sibling"
+"n" = "select_next_sibling"
+"right" = "select_next_sibling"
+"e" = "extend_parent_node_end"
+"b" = "extend_parent_node_start"
+"a" = "select_all_siblings"
+"x" = "shrink_to_line_bounds"
+"*" = "search_selection"
+"u" = "earlier"
+"U" = "later"
+"J" = "join_selections_space"
+"K" = "remove_selections"
+"(" = "rotate_selection_contents_backward"
+")" = "rotate_selection_contents_forward"
+"|" = "shell_pipe_to"
+"!" = "shell_append_output"

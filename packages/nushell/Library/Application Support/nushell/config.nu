@@ -23,6 +23,6 @@ source ~/.zoxide.nu
 source ~/.local/share/atuin/init.nu
 alias vim = nvim
 alias vi = nvim
-$env.EDITOR = "nvim"
-$env.VISUAL = "nvim"
+$env.EDITOR = "hx"
+$env.VISUAL = "hx"
 $env.PATH = ($env.PATH | prepend ($env.HOME | path join ".deno" "bin"))

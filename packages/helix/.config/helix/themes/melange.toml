@@ -1,0 +1,131 @@
+# Melange dark port: https://github.com/savq/melange-nvim
+# See melange.LICENSE for upstream attribution.
+# Keep the terminal background transparent; explicitly map syntax and UI colors.
+
+"attribute" = "b_yellow"
+"special" = "b_yellow"
+"function" = "b_yellow"
+"constructor" = "b_yellow"
+"type" = "c_cyan"
+"constant" = "a_fg"
+"variable" = "a_fg"
+"namespace" = "a_fg"
+"constant.builtin" = "c_magenta"
+"constant.numeric" = "b_magenta"
+"constant.builtin.boolean" = "b_magenta"
+"constant.character" = "c_blue"
+"constant.character.escape" = "c_blue"
+"string" = { fg = "b_blue", modifiers = ["italic"] }
+"string.regexp" = "b_blue"
+"string.special" = "b_cyan"
+"constant.other.placeholder" = "b_cyan"
+"string.special.path" = "c_green"
+"string.special.url" = "c_blue"
+"string.special.symbol" = { fg = "a_fg", modifiers = ["italic"] }
+"variable.builtin" = { fg = "a_fg", modifiers = ["italic"] }
+"comment" = { fg = "a_com", modifiers = ["italic"] }
+"markup.quote" = { fg = "a_com", modifiers = ["italic"] }
+"comment.line.documentation" = "a_com"
+"comment.block.documentation" = "a_com"
+"label" = "b_cyan"
+"markup.raw" = "b_cyan"
+"markup.link.text" = "b_cyan"
+"markup.link.label" = "b_cyan"
+"punctuation" = "d_yellow"
+"punctuation.delimiter" = "c_red"
+"markup.list" = "c_red"
+"punctuation.special" = "b_yellow"
+"keyword" = "c_yellow"
+"tag" = "c_yellow"
+"keyword.function" = "b_green"
+"keyword.control.import" = "b_green"
+"keyword.directive" = "b_green"
+"operator" = "b_red"
+"keyword.operator" = "b_red"
+"markup.heading" = { fg = "c_yellow", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "b_yellow", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "b_yellow", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "b_green", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "b_green", modifiers = ["bold"] }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "c_blue", underline = { style = "line" } }
+"diff.plus" = "c_green"
+"markup.list.checked" = "c_green"
+"diff.minus" = "c_red"
+"diff.delta" = "c_yellow"
+"warning" = "c_yellow"
+"ui.background" = { fg = "a_fg" }
+"ui.text" = { fg = "a_fg" }
+"ui.text.info" = { fg = "a_fg" }
+"ui.text.focus" = { fg = "b_yellow", modifiers = ["bold"] }
+"ui.text.inactive" = "a_ui"
+"ui.linenr" = "a_ui"
+"ui.gutter" = "a_ui"
+"ui.window" = "a_ui"
+"ui.virtual" = "a_ui"
+"ui.text.directory" = "c_green"
+"ui.linenr.selected" = "c_yellow"
+"ui.cursor" = { fg = "a_bg", bg = "a_com" }
+"ui.cursor.primary" = { fg = "a_bg", bg = "a_fg" }
+"ui.cursor.match" = { bg = "d_red", modifiers = ["bold"] }
+"ui.selection" = { bg = "a_sel" }
+"ui.selection.primary" = { bg = "a_sel" }
+"ui.highlight" = { bg = "a_sel" }
+"tabstop" = { bg = "a_sel" }
+"ui.cursorline.primary" = { bg = "a_float" }
+"ui.virtual.ruler" = { bg = "a_float" }
+"ui.statusline" = { fg = "a_fg", bg = "a_float" }
+"ui.popup" = { fg = "a_fg", bg = "a_float" }
+"ui.help" = { fg = "a_fg", bg = "a_float" }
+"ui.menu" = { fg = "a_fg", bg = "a_float" }
+"ui.statusline.inactive" = { fg = "a_com", bg = "a_float" }
+"ui.bufferline" = { fg = "a_com", bg = "a_float" }
+"ui.statusline.normal" = { fg = "a_bg", bg = "b_yellow", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "a_bg", bg = "b_green", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "a_bg", bg = "b_magenta", modifiers = ["bold"] }
+"ui.bufferline.active" = { fg = "a_fg", bg = "a_sel", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "a_float" }
+"ui.menu.selected" = { fg = "b_yellow", bg = "a_sel", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "a_ui", bg = "a_float" }
+"ui.virtual.inlay-hint" = { fg = "a_ui", modifiers = ["italic"] }
+"ui.virtual.jump-label" = { fg = "b_red", modifiers = ["bold"] }
+"ui.debug.breakpoint" = "b_red"
+"error" = "b_red"
+"ui.debug.active" = "b_yellow"
+"info" = "c_blue"
+"hint" = "c_cyan"
+"diagnostic" = { underline = { style = "curl" } }
+"diagnostic.error" = { underline = { color = "b_red", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "c_yellow", style = "curl" } }
+"diagnostic.info" = { underline = { color = "c_blue", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "c_cyan", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+
+[palette]
+a_bg = "#292522"
+a_float = "#34302C"
+a_sel = "#403A36"
+a_ui = "#867462"
+a_com = "#C1A78E"
+a_fg = "#ECE1D7"
+b_red = "#D47766"
+b_yellow = "#EBC06D"
+b_green = "#85B695"
+b_cyan = "#89B3B6"
+b_blue = "#A3A9CE"
+b_magenta = "#CF9BC2"
+c_red = "#BD8183"
+c_yellow = "#E49B5D"
+c_green = "#78997A"
+c_cyan = "#7B9695"
+c_blue = "#7F91B2"
+c_magenta = "#B380B0"
+d_red = "#7D2A2F"
+d_yellow = "#8B7449"
+d_green = "#233524"
+d_cyan = "#253333"
+d_blue = "#273142"
+d_magenta = "#422741"

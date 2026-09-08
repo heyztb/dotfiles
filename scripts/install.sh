@@ -8,14 +8,14 @@ readonly PACKAGES_DIR="${REPO_ROOT}/packages"
 readonly TARGET_HOME="${HOME:?HOME must be set}"
 readonly STATE_ROOT="${XDG_STATE_HOME:-${TARGET_HOME}/.local/state}"
 readonly BACKUP_ROOT="${STATE_ROOT}/dotfiles/backups/$(date '+%Y%m%d-%H%M%S')"
-readonly -a ALL_PACKAGES=(nvim tmux hunk ghostty nushell zsh)
+readonly -a ALL_PACKAGES=(nvim helix tmux hunk ghostty nushell zsh)
 
 usage() {
   cat <<'EOF'
 Usage: scripts/install.sh [package ...]
 
 Install all dotfile packages, or only the named packages:
-  nvim tmux hunk ghostty nushell zsh
+  nvim helix tmux hunk ghostty nushell zsh
 EOF
 }
 
