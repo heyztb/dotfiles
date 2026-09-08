@@ -6,8 +6,13 @@ scrolloff = 8
 text-width = 100
 rulers = [100]
 
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
 [editor.soft-wrap]
-enable = false
+enable = true
 wrap-at-text-width = true
 
 [keys.normal]
