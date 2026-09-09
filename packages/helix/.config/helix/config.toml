@@ -6,6 +6,9 @@ scrolloff = 8
 text-width = 100
 rulers = [100]
 
+[editor.statusline]
+right = ["workspace-diagnostics", "diagnostics", "selections", "register", "position", "file-encoding"]
+
 [editor.file-picker]
 hidden = false
 
