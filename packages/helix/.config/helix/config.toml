@@ -6,6 +6,9 @@ scrolloff = 8
 text-width = 100
 rulers = [100]
 
+[editor.file-picker]
+hidden = false
+
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
