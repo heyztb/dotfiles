@@ -12,7 +12,7 @@ brew install stow
 Pass package names to install only part of the configuration:
 
 ```shell
-./scripts/install.sh nvim helix ghostty nushell
+./scripts/install.sh nvim helix yazi ghostty nushell
 ```
 
 Existing files are backed up before linking to:
