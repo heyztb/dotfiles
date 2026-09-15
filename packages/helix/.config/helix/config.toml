@@ -3,8 +3,8 @@ theme = "melange"
 [editor]
 line-number = "relative"
 scrolloff = 8
-text-width = 100
-rulers = [100]
+text-width = 120
+rulers = [120]
 
 [editor.statusline]
 right = ["workspace-diagnostics", "diagnostics", "selections", "register", "position", "file-encoding"]

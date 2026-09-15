@@ -1,0 +1,3 @@
+# Match the custom Helix Melange palette in code previews.
+[mgr]
+syntect_theme = "~/.config/yazi/melange.tmTheme"
