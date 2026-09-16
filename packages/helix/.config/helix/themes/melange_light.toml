@@ -1,0 +1,30 @@
+# Melange light palette: https://github.com/savq/melange-nvim/blob/master/lua/melange/palettes/light.lua
+# See melange.LICENSE for upstream attribution.
+# Reuse the dark port's scopes and transparent terminal background.
+inherits = "melange"
+
+[palette]
+a_bg = "#F1F1F1"
+a_float = "#E9E1DB"
+a_sel = "#D9D3CE"
+a_ui = "#A98A78"
+a_com = "#7D6658"
+a_fg = "#54433A"
+b_red = "#BF0021"
+b_yellow = "#A06D00"
+b_green = "#3A684A"
+b_cyan = "#3D6568"
+b_blue = "#465AA4"
+b_magenta = "#904180"
+c_red = "#C77B8B"
+c_yellow = "#BC5C00"
+c_green = "#6E9B72"
+c_cyan = "#739797"
+c_blue = "#7892BD"
+c_magenta = "#BE79BB"
+d_red = "#F1DEDF"
+d_yellow = "#CCA478"
+d_green = "#D0E9D1"
+d_cyan = "#CDE8E7"
+d_blue = "#E0E2E8"
+d_magenta = "#E8E0E8"

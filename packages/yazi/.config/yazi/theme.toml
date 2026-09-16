@@ -1,3 +1,4 @@
-# Match the custom Helix Melange palette in code previews.
-[mgr]
-syntect_theme = "~/.config/yazi/melange.tmTheme"
+# Match the Helix Melange palettes; follow the terminal's light/dark mode.
+[flavor]
+dark = "melange-dark"
+light = "melange-light"
