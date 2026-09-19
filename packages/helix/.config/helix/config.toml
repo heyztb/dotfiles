@@ -5,7 +5,7 @@ theme = "melange_light"
 line-number = "relative"
 scrolloff = 8
 text-width = 120
-rulers = [120]
+rulers = [80, 120]
 
 [editor.statusline]
 right = ["workspace-diagnostics", "diagnostics", "selections", "register", "position", "file-encoding"]
@@ -36,6 +36,9 @@ C-y = [
 	':set mouse false',
   ':set mouse true',
 ]
+
+[keys.normal.g]
+q = ":reflow 80"
 
 # AeroSpace owns Alt: press backslash, then the original Alt binding key.
 [keys.normal."\\"]

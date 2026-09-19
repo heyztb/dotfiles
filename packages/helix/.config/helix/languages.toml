@@ -43,3 +43,8 @@ args = ["--stdio"]
 [[language]]
 name = "markdown"
 language-servers = ["marksman", "harper-ls"]
+
+[[language]]
+name = "swift"
+formatter = { command = "swift", args = ["format"] }
+auto-format = true
