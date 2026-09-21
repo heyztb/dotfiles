@@ -1,5 +1,7 @@
 # Switch this session with :theme melange or :theme melange_light.
-theme = "melange_light"
+[theme]
+light = "melange_light"
+dark = "melange"
 
 [editor]
 line-number = "relative"
