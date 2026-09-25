@@ -28,10 +28,11 @@ C-d = ["page_cursor_half_down", "align_view_center"]
 C-u = ["page_cursor_half_up", "align_view_center"]
 n = ["search_next", "align_view_center"]
 N = ["search_prev", "align_view_center"]
+# Yazi disables theme notifications on exit; restore mode 2031 and query the current theme.
 C-y = [
 	':sh rm -f /tmp/unique-ca1ea106',
 	':insert-output yazi "%{buffer_name}" --chooser-file=/tmp/unique-ca1ea106 < /dev/tty',
-	':sh printf "\x1b[?1049h\x1b[?2004h" > /dev/tty',
+	':sh printf "\x1b[?1049h\x1b[?2004h\x1b[?2031h\x1b[?996n" > /dev/tty',
 	':open %sh{cat /tmp/unique-ca1ea106}',
 	':redraw',
 	':set mouse false',

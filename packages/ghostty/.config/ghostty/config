@@ -1,5 +1,5 @@
 command = "zsh -l -c 'exec nu'"
-background-opacity = 1
+background-opacity = 0.8
 background-blur-radius = 20
 
 font-family = SF Mono
@@ -11,7 +11,7 @@ cursor-style = block
 cursor-style-blink = false
 cursor-invert-fg-bg = true
 
-macos-titlebar-style = hidden
+macos-titlebar-style = transparent
 macos-option-as-alt = true
 mouse-hide-while-typing = true
 
@@ -20,12 +20,13 @@ window-decoration = true
 window-padding-x = 10
 window-padding-y = 10
 window-padding-balance = true
+window-new-tab-position = end
 
 auto-update = check
-auto-update-channel = stable
+auto-update-channel = tip
 
 # extras
-shell-integration-features = no-cursor
+shell-integration-features = ssh-env,ssh-terminfo
 copy-on-select = clipboard
 
 theme = light:Melange Light,dark:Melange Dark
